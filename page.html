@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>JeDev.</title>
+</head>
+<body class="bg-white text-gray-900 font-[Poppins] overflow-x-hidden">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-10 py-5 border-b border-gray-100 fixed w-full top-0 bg-white/80 backdrop-blur-md z-10 shadow-sm" data-aos="fade-down" data-aos-duration="800">
+    <h1 class="text-2xl font-bold tracking-tight">JeDev.</h1>
+    <ul class="flex space-x-8 text-gray-600 font-medium text-sm md:text-base">
+      <li><a href="#about" class="hover:text-black transition-colors">About Me</a></li>
+      <li><a href="#projects" class="hover:text-black transition-colors">Portfolio</a></li>
+      <li><a href="#contact" class="hover:text-black transition-colors">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col md:flex-row">
+        
+        <!-- Left Side -->
+        <div class="flex-1 flex items-center justify-center px-6 md:px-0">
+            <div class="flex flex-col" data-aos="fade-right" data-aos-duration="1000">
+                <!-- Heading -->
+                <h1 class="text-6xl md:text-8xl font-light">Hello</h1>
+                <p class="text-gray-500 mt-2">— It’s Jed, a web developer</p>
+                <a href="#about" class="text-sm text-gray-500 mt-12 hover:text-black transition duration-300">
+                Scroll down ↓
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex-1 relative flex items-center justify-center">
+            <!-- Picture -->
+            <div class="absolute w-[80vw] max-w-[930px] h-[80vw] max-h-[930px] rounded-xl overflow-hidden" data-aos="fade-left" data-aos-duration="1000">
+                <img src="images/shoot_177.png" alt="profile photo" class="object-cover w-full h-full">
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section id="about" class="px-10 py-20 grid grid-cols-1 md:grid-cols-2 gap-12" data-aos="fade-right">
+  
+  <!-- About Me -->
+  <div class="md:pr-10">
+    <h1 class="text-3xl font-bold mb-6">About Me</h1>
+    <p class="text-gray-600 leading-relaxed text-justify">
+      I am a 3rd-year Computer Science student with a strong interest in creating clean, functional, and user-friendly websites. 
+      Currently, I serve as the <span class="font-semibold">Logistics Head for SITEAO</span>, where I develop organizational and leadership skills alongside my technical growth.  
+
+      <br><br>
+      I find coding both challenging and fun—it pushes me to solve problems creatively and continuously learn. 
+      While I enjoy different aspects of programming, I lean more towards <span class="font-semibold">front-end development</span>, 
+      where I can bring ideas to life through design and interactivity.  
+
+      <br><br>
+      At the moment, I’m learning <span class="font-semibold">TailwindCSS</span>, and I’ve been enjoying how it speeds up the process of designing responsive and modern UIs.  
+
+      <br><br>
+      I value <span class="font-semibold">teamwork, creativity, and continuous learning</span>, and I’m always looking for opportunities to grow as both a developer and a collaborator.
+    </p>
+  </div>
+
+  <!-- Hobbies -->
+  <div class="md:pl-10 md:border-l md:border-gray-200" data-aos="fade-left">
+      <h1 class="text-3xl font-bold mb-6">
+    Hobbies <span class="text-sm text-gray-500 font-normal">Try to hover! 👀</span>
+  </h1>
+    <div class="grid grid-cols-3 gap-6">
+      
+      <!-- Hobby Card -->
+        <div class="relative group h-56 rounded-md overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/hobby1.png" alt="Valorant" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center text-gray-800 font-semibold text-lg transition-opacity duration-500 group-hover:opacity-0">
+                Playing Valorant
+            </div>
+        </div>
+
+      <div class="relative group h-56 rounded-md overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/hobby2.png" alt="Gymming" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"> 
+            <div class="absolute inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center text-gray-800 font-semibold text-lg transition-opacity duration-500 group-hover:opacity-0">
+                Gymming
+            </div>
+      </div>
+
+      <div class="relative group h-56 rounded-md overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/hobby3.png" alt="Hiking" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"> 
+            <div class="absolute inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center text-gray-800 font-semibold text-lg transition-opacity duration-500 group-hover:opacity-0">
+                Hiking
+            </div>
+      </div>
+
+      <div class="relative group h-56 rounded-md overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/hobby4.png" alt="Cooking" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"> 
+            <div class="absolute inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center text-gray-800 font-semibold text-lg transition-opacity duration-500 group-hover:opacity-0">
+                Cooking
+            </div>
+      </div>
+
+      <div class="relative group h-56 rounded-md overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/hobby5.png" alt="Organizational Work" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"> 
+            <div class="absolute inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center text-gray-800 font-semibold text-lg transition-opacity duration-500 group-hover:opacity-0">
+                Organizational Work
+            </div>
+      </div>
+
+      <div class="relative group h-56 rounded-md overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/hobby6.png" alt="Swimming" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"> 
+            <div class="absolute inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center text-gray-800 font-semibold text-lg transition-opacity duration-500 group-hover:opacity-0">
+                Swimming
+            </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="px-10 py-24">
+  <h1 class="text-3xl font-bold mb-12">Projects</h1>
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- CIT.006 Project -->
+    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition p-6 cursor-pointer project-card " data-aos="zoom-in" data-aos-duration="800"
+         data-title="C++ Phonebook"
+         data-description="This project is a phonebook application created in C++ as part of our 2nd-year CIT.006 course. It uses a Binary Search Tree 
+         (BST) to efficiently manage contacts, allowing users to add, search, update, delete, and save/load contact information. The app demonstrates 
+         practical use of data structures, file handling, and input validation, while providing a real-world solution for organizing personal contacts."
+         data-image="images/phonebook.png"
+         data-download="projects/phonebook.zip"
+         data-github="https://github.com/jediii16/c-phonebook">
+      <img src="images/phonebook.png" alt="C++ Phonebook" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h2 class="text-xl font-semibold">C++ Phonebook</h2>
+      <p class="text-gray-600 text-sm mt-2">A C++ command-line phonebook app using a Binary Search Tree (BST) for efficient contact management, including add, search, update, delete, and save/load features.</p>
+    </div>
+
+    <!-- CIT.005 Project -->
+    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition p-6 cursor-pointer project-card" data-aos="zoom-in" data-aos-duration="800"
+         data-title="Surface Area and Volume Calculator"
+         data-description="This was our second-year project for CIT.005 (OOP in Java). It’s a Java Swing application that calculates the surface area and 
+         volume of different 3D shapes like cones, cylinders, spheres, prisms, and pyramids. We implemented a dynamic form that shows inputs for the 
+         selected shape, performs calculations, and displays the results. This project emphasizes object-oriented programming concepts and GUI design."
+         data-image="images/JavaProject.png"
+         data-download="projects/SAandVolCalc.zip"
+         data-github="https://github.com/jediii16/SAandVolCalc ">
+      <img src="images/JavaProject.png" alt="Surface Area and Volume Calculator" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h2 class="text-xl font-semibold">Surface Area and Volume Calculator</h2>
+      <p class="text-gray-600 text-sm mt-2">Surface Area and Volume Calculator built in Java Swing for various 3D shapes.</p>
+    </div>
+
+    <!-- Mitch Pastries -->
+    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition p-6 cursor-pointer project-card" data-aos="zoom-in" data-aos-duration="800"
+         data-title="Mitch Pastries"
+         data-description="Mitch Pastries started as our first-year project in CIT.003, built mainly with HTML, CSS, and JavaScript to showcase pastries, cakes, and desserts. 
+         In our second year, during CIT.007, we enhanced it by adding ‘Add to Cart’ functionality using PHP and MySQL, allowing users to interact with a database and manage orders. 
+         An admin side was also implemented to manage products, view orders, and update content. This project reflects our growth as web developers, evolving from a static showcase to a fully functional bakery website with dynamic features."
+         data-image="images/MitchPastries.png"
+         data-download="projects/MitchPastries-CIT007-FR.zip"
+         data-github="https://github.com/jediii16/Mitch-Pastries">
+      <img src="images/MitchPastries.png" alt="Mitch Pastries" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h2 class="text-xl font-semibold">Mitch Pastries</h2>
+      <p class="text-gray-600 text-sm mt-2">A bakery website project starting with HTML/CSS/JS, later upgraded with PHP, MySQL, and an admin panel for managing products and orders.</p>
+    </div>
+  </div> 
+</section>
+
+<!-- Modal -->
+<div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 transition-opacity duration-300">
+  <div class="bg-white rounded-xl max-w-lg w-full p-6 relative mx-4 transform scale-95 opacity-0 transition-all duration-300">
+    <button id="closeModal" class="absolute top-0 right-1 text-gray-500 hover:text-black z-50">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+    <img id="modalImage" src="" alt="Project Screenshot" class="rounded-lg mb-4 w-full object-cover">
+     <h2 id="modalTitle" class="text-2xl font-bold mb-2 flex items-center space-x-2">
+      <span id="modalIcon"></span>
+      <span></span>
+     </h2>
+      <p id="modalDescription" class="text-gray-600 mb-4"></p>
+        <div class="flex flex-wrap gap-3">
+            <a id="modalDownload" href="#" download
+                class="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition text-sm">
+                <i data-lucide="download" class="w-4 h-4"></i>
+                Download Code
+            </a>
+            <a id="modalGitHub" href="#" target="_blank"
+                class="flex i   tems-center gap-2 px-4 py-2 border border-gray-200 rounded-md hover:bg-gray-100 transition text-sm">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Contact -->
+<section id="contact" class="px-10 py-12 flex flex-col items-center">
+  <h1 class="text-3xl font-bold mb-6 text-center" data-aos="fade-up" data-aos-duration="800">Contact Me</h1>
+
+  <!-- Contact Form -->
+  <form id="contactForm" action="" class="w-full max-w-xl space-y-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+    <input type="text" placeholder="Name" class="w-full px-4 py-3 border border-gray-200 rounded-md focus:ring-2 focus:ring-black focus:outline-none">
+    <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-200 rounded-md focus:ring-2 focus:ring-black focus:outline-none">
+    <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-md focus:ring-2 focus:ring-black focus:outline-none"></textarea>
+    <button type="submit" class="w-full px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition">
+      Send
+    </button>
+  </form>
+
+  <div class="flex items-center w-full max-w-xl my-10">
+    <div class="flex-grow border-t border-gray-300"></div>
+    <span class="mx-4 text-gray-500">or</span>
+    <div class="flex-grow border-t border-gray-300"></div>
+  </div>
+
+<!-- Socials -->
+<div class="flex space-x-6 text-gray-600 text-xl">
+  <a href="https://www.facebook.com/jededison.tenorio.7" target="_blank" class="hover:text-black transition transform hover:scale-110" data-aos="fade-up" data-aos-delay="200">
+    <i data-lucide="facebook"></i>
+  </a>
+  <a href="https://x.com/iSnipyy" target="_blank" class="hover:text-black transition transform hover:scale-110" data-aos="fade-up" data-aos-delay="200">
+    <i data-lucide="twitter"></i>
+  </a>
+  <a href="https://instagram.com/jeditnrio" target="_blank" class="hover:text-black transition transform hover:scale-110" data-aos="fade-up" data-aos-delay="200">
+    <i data-lucide="instagram"></i>
+  </a>
+  <a href="https://github.com/jediii16" target="_blank" class="hover:text-black transition transform hover:scale-110" data-aos="fade-up" data-aos-delay="200">
+    <i data-lucide="github"></i>
+  </a>
+  <a href="https://tiktok.com/@isnipyy" target="_blank" class="hover:text-black transition transform hover:scale-110" data-aos="fade-up" data-aos-delay="200">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-6 h-6">
+        <path d="M224 72.6a60.2 60.2 0 0 1-34.5-11 59.5 59.5 0 0 1-13.3-13.4A59.6 59.6 0 0 1 168 12a12 12 0 0 0-12-12h-28a12 12 0 0 0-12 12v152a28 28 0 1 1-28-28 12 12 0 0 0 12-12V96a12 12 0 0 0-12-12 84 84 0 1 0 84 84V117a84.3 84.3 0 0 0 40 10.6 12 12 0 0 0 12-12V84.6a12 12 0 0 0-9.7-12z"/>
+    </svg>
+  </a>
+  <a href="https://linkedin.com/in/jed-tenorio-9b9163387" target="_blank" class="hover:text-black transition transform hover:scale-110" data-aos="fade-up" data-aos-delay="200">
+    <i data-lucide="linkedin"></i>
+  </a>
+</div>
+
+<script>
+  lucide.createIcons();
+</script>
+
+  <!-- Footer -->
+  <footer class="px-10 py-6 text-center text-gray-500 border-t border-gray-100 text-sm" data-aos="fade-up" data-aos-duration="800">
+    © 2025 JeDev. All rights reserved.
+  </footer>
+
+  <!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init("7tSJa5pzRwwtihQGi");
+</script>
+
+<script>
+  const modal = document.getElementById('projectModal');
+  const modalContent = modal.querySelector('div');
+  const closeModal = document.getElementById('closeModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle').querySelectorAll('span')[1];
+  const modalDescription = document.getElementById('modalDescription');
+  const modalDownload = document.getElementById('modalDownload');
+  const modalGitHub = document.getElementById('modalGitHub');
+
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.add('flex');
+        modalContent.classList.remove('scale-95', 'opacity-0');
+        modalContent.classList.add('scale-100', 'opacity-100');
+      }, 10);
+
+      modalImage.src = card.dataset.image;
+      modalTitle.textContent = card.dataset.title;
+      modalDescription.textContent = card.dataset.description;
+      modalDownload.href = card.dataset.download;
+      modalGitHub.href = card.dataset.github;
+    });
+  });
+
+  const hideModal = () => {
+    modalContent.classList.remove('scale-100', 'opacity-100');
+    modalContent.classList.add('scale-95', 'opacity-0');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }, 300);
+  };
+
+  closeModal.addEventListener('click', hideModal);
+  modal.addEventListener('click', e => { if(e.target === modal) hideModal(); });
+
+
+    const form = document.getElementById('contactForm');
+
+//Form submission
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_br9ujbm', 'template_6upa0jv', this)
+      .then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+      }, (error) => {
+        alert("Failed to send message: " + error.text);
+      });
+  });
+
+</script>
+
+<!-- Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true,
+  });
+</script>
+
+</body>
+</html>
